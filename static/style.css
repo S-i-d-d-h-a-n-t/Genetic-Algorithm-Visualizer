@@ -1,0 +1,58 @@
+/* static/style.css */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background-color: #f4f7f9;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+}
+.container {
+    max-width: 1200px;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+header {
+    text-align: center;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+.controls {
+    text-align: center;
+    margin-bottom: 30px;
+}
+#startButton {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+#startButton:hover {
+    background-color: #0056b3;
+}
+#status {
+    margin-top: 10px;
+    color: #666;
+}
+.dashboard {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.chart-container {
+    flex: 1;
+    min-width: 500px;
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 5px;
+}
+#gantt-chart-container {
+    height: 500px; /* Fixed height for Gantt chart */
+}

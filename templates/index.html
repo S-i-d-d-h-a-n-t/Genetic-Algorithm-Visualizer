@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>GA for Job Shop Scheduling</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Genetic Algorithm for Flexible Job Shop Scheduling</h1>
+        </header>
+
+        <div class="controls">
+            <button id="startButton">Start Algorithm</button>
+            <p id="status">Status: Ready</p>
+        </div>
+
+        <main class="dashboard">
+            <div class="chart-container" id="line-chart-container">
+                <h2>Makespan vs. Generation</h2>
+                <canvas id="makespanChart"></canvas>
+            </div>
+            <div class="chart-container" id="gantt-chart-container">
+                <h2>Current Best Schedule (Gantt Chart)</h2>
+                <div id="ganttChart"></div>
+            </div>
+        </main>
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
